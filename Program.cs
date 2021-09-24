@@ -11,13 +11,15 @@ namespace AbstractClasses
             Chevrolet chevy = new Chevrolet();
             Volkswagen vw = new Volkswagen();
 
+            chevy.Make = "Chevrolet";
             chevy.Model = "Equinox";
             chevy.Color = "Blue";
 
+            vw.Make = "Volkswagen";
             vw.Model = "Jetta";
             vw.Color = "Grey";
 
-            System.Console.WriteLine($"The {chevy.Model} is {chevy.Color}");
+            System.Console.WriteLine($"The {chevy.Make} {chevy.Model} is {chevy.Color}");
 
             chevy.Start();
             chevy.Drive();
@@ -25,7 +27,7 @@ namespace AbstractClasses
             chevy.Park();
             chevy.Stop();
 
-            System.Console.WriteLine($"The {vw.Model} is {vw.Color}");
+            System.Console.WriteLine($"The {vw.Make} {vw.Model} is {vw.Color}");
 
             vw.Start();
             vw.Drive();
